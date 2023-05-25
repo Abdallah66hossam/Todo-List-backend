@@ -46,7 +46,7 @@ const signupUser = async (req, res) => {
 
     res.status(200).json({ email, password: hashedPassword, token });
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(400).json({ error: 'type a valid email & password' });
   }
 };
 
